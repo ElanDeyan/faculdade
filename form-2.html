@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-2</title>
+    <style>
+
+        .field {
+            margin-bottom: 20px;
+        }
+
+        fieldset {
+            border: 3px solid #000;
+            border-radius: 5px;
+            width: fit-content;
+            height: auto;
+        }
+
+        label {
+            font-size: 1.125rem;
+        }
+
+        input {
+            margin-bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>
+                <h1>Responda ao nosso formulário &#128512; </h1>
+            </legend>
+            <div class="field">
+                <label for="nome">Nome<sup>*</sup>:</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="field">
+                <label for="sobrenome">Sobrenome<sup>*</sup>:</label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+            <div class="field">
+                <label for="email">E-mail<sup>*</sup>:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="field">
+                <details>
+                    <summary>Pesquisa opcional</summary>
+                    <label for="semestre">Qual semestre está cursando?</label>
+                    <select name="semestre" id="semestre">
+                        <option value="1° semestre">1° semestre</option>
+                        <option value="2° semestre">2° semestre</option>
+                        <option value="3° semestre">3° semestre</option>
+                        <option value="4° semestre">4° semestre</option>
+                        <option value="5° semestre">5° semestre</option>
+                        <option value="6° semestre">6° semestre</option>
+                        <option value="7° semestre">7° semestre</option>
+                        <option value="8° semestre">8° semestre</option>
+                    </select>
+                </details>
+            </div>
+            <div class="field">
+                <button type="submit">Enviar</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
